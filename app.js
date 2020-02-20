@@ -17,7 +17,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'handlebars');
 app.use(express.static(path.join(__dirname, '/public')));
-app.use(express.static(path.join(__dirname, '.../public')));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'views')));
 app.use(express.urlencoded());
 
