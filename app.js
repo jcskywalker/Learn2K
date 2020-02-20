@@ -12,7 +12,7 @@ var handlebars = require('express3-handlebars');
 
 const app = express();
 
-app.set('port', process.env.PORT || 3000);
+//app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'handlebars');
@@ -93,8 +93,6 @@ app.get('/css/styles.css', function(req, res){
      res.send('css/styles.css'); res.end(); });
 
 
-//const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;
 
-http.createServer(app).listen(app.get('port'), function(){
-    console.log('Express server listening on port ' + app.get('port'));
-});
+app.listen(PORT, console.log(`Server started on port ${PORT}`));
