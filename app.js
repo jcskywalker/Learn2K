@@ -86,17 +86,7 @@ if ('development' == app.get('env')) {
 //Routes
 app.use('/', require('./routes/index'));
 app.use('/users', require('./routes/users'));
-app.get('/', function(req, res){
-    res.render('register')
-});
-app.get('/', function(req, res){
-    res.render('login')
-});
-app.get('/routes/users.js', function (req, res){
-    res.send(req.params)
-});
-app.get('/css/styles.css', function(req, res){
-     res.send('css/styles.css'); res.end(); });
+
 
 
 //const PORT = process.env.PORT || 5000;
