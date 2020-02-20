@@ -15,7 +15,7 @@ const app = express();
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.engine('html', require('ejs').renderFile);
-app.set('view engine', 'handlebars');
+//app.set('view engine', 'handlebars');
 app.use(express.static(path.join(__dirname, '/public')));
 app.use(express.static(path.join(__dirname, '.../public')));
 app.use(express.static(path.join(__dirname, 'views')));
@@ -86,6 +86,15 @@ if ('development' == app.get('env')) {
 //Routes
 app.use('/', require('./routes/index'));
 app.use('/users', require('./routes/users'));
+app.get('/', function(req, res){
+    res.render('register')
+});
+app.get('/', function(req, res){
+    res.render('login')
+});
+app.get('/routes/users.js', function (req, res){
+    res.send(req.params)
+});
 app.get('/css/styles.css', function(req, res){
      res.send('css/styles.css'); res.end(); });
 
