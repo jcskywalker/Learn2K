@@ -5,16 +5,26 @@ const flash = require('connect-flash');
 const session = require('express-session');
 const passport = require('passport');
 
+
 var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars');
 
 const app = express();
+
+app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
+app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'handlebars');
 app.use(express.static(path.join(__dirname, '/public')));
+app.use(express.static(path.join(__dirname, '.../public')));
 app.use(express.static(path.join(__dirname, 'views')));
 app.use(express.urlencoded());
+
+app.get('/', function(req, res){
+    res.render("register");
+});
+
 /*Environments 
 
 app.engine('handlebars', handlebars());
@@ -37,7 +47,7 @@ require('./config/passport')(passport);
 const db = require('./config/keys').MongoURI;
 
 // Connect to Mongo
-mongoose.connect(db, { useNewUrlParser: true})
+mongoose.connect(db, { useUnifiedTopology: true})
     .then(() => console.log("MongoDB is Connected..."))
     .catch(err => console.log(err));
 
@@ -83,6 +93,8 @@ app.get('/css/styles.css', function(req, res){
      res.send('css/styles.css'); res.end(); });
 
 
-const PORT = process.env.PORT || 5000;
+//const PORT = process.env.PORT || 5000;
 
-http.createServer(app).listen(PORT, console.log(`Server started on port ${PORT}`));
+http.createServer(app).listen(app.get('port'), function(){
+    console.log('Express server listening on port ' + app.get('port'));
+});
