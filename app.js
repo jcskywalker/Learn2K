@@ -21,6 +21,8 @@ app.use(express.static(path.join(__dirname, '.../public')));
 app.use(express.static(path.join(__dirname, 'views')));
 app.use(express.urlencoded());
 
+// The below works but isn't a good practice because it's not scalable
+app.use("/app.js", express.static(path.join(__dirname, "/app.js")));
 
 /*Environments 
 
