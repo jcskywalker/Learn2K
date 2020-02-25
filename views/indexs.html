@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Learn2K - Community Chatroom</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  <link rel="stylesheet" href="sty.css">
+  <style>
+    .topright {
+      position: absolute;
+      right: 20rem;
+      font-size: 20px;
+    }
+    .topleft{
+      position: absolute;
+      left: 15rem;
+      font-size:20px;
+    }
+    .showcase {
+      background: url('NBA 2K12 First Textures Exported.jpg') repeat-x center center fixed;
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    .showcase::after {
+      content:'';
+      position:sticky;
+      width:100%;
+      height:100%;
+      top:0;
+      left:0;
+      z-index:1;
+      background: rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+<body class="showcase">
+  <header>
+    <h1 class="title" style="color:azure; font-family: Chalkduster, fantasy">Learn2K - Community Chatroom</h1>
+  </header>
+  <a href="homepage" style="color:azure; font-family: Chalkduster, fantasy" class ="topleft" class="active-item"><i class="fa fa-user"></i>Home</a>
+  <a href="/users/logout" style="color:azure; font-family: Chalkduster, fantasy" class="topright" class="btn button-container";>Logout</a>
+  <main>
+    <form class="mew-form">
+      <div class="error-message">
+      </div>
+      <label style="color:azure; font-family: Chalkduster, fantasy" for="name">Name</label>
+      <input class="u-full-width" type="text" id="name" name="name">
+      <label style="color:azure; font-family: Chalkduster, fantasy" for="content">Message</label>
+      <textarea class="u-full-width" type="text" id="content" name="content"></textarea>
+      <button class="button-primary">Shoot Your Message!</button>
+    </form>
+    <div class="mews">
+
+    </div>
+    <div class="button-container">
+      <!-- <button id="loadMoreButton" class="button-primary" style="visibility: hidden">Load More Mews</button> -->
+      <p id="loadMore">Loading...</p>
+    </div>
+    <div class="loading">
+      <img src="loading.gif" alt="">
+    </div>
+  </main>
+  <script src="client.js"></script>
+</body>
+</html>
