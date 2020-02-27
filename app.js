@@ -10,6 +10,7 @@ var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars');
 
+//Handlebars.registerPartial("headcode", "{{head}}");
 const app = express();
 
 app.set('port', process.env.PORT || 3000);
