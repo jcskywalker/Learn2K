@@ -5,7 +5,7 @@ const flash = require('connect-flash');
 const session = require('express-session');
 const passport = require('passport');
 
-
+//var index = require('./routes/index');
 var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars');
@@ -88,6 +88,7 @@ if ('development' == app.get('env')) {
 
 //Routes
 app.use('/', require('./routes/index'));
+//app.get('/viewAlt', index.viewAlt);
 app.use('/users', require('./routes/users'));
 
 

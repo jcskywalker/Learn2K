@@ -1,0 +1,142 @@
+{
+	"projects": 
+	[
+		{
+			"id": 1,
+			"BD": "Move Player",
+			"DBD":"Move Left Stick in any direction",
+			"imageBD": "moveplayerimage.png",
+			"videoBD":"moveplayervideo.mov"
+		},
+		{
+			"id": 2,
+			"BD": "Hands Up / Contest",
+			"DBD":"Move Left Stick to Move user controlled player and hold right stick up",
+			"imageBD": "controller.png"
+			
+		},
+		{
+			"id": 3,
+			"BD": "Intense D",
+			"DBD": "Press and Hold LT to get into a low defensive stance",
+			"summary": "<p>This is the first team assignment. Review and share the user needs you brainstormed. This week, you'll flesh out your design ideas by creating a point of view, seeking inspiration, storyboarding, and making paper prototypes. These are the blueprints for the mobile web application you'll make.</p>",
+			"imageBD": "intensedimage.png",
+			"videoBD": "intensedvideo.mov"
+		},
+		{
+			"id": 4,
+			"BD": "Sprint",
+			"DBD": "Hold RT + move Left Stick in any direction",
+			"summary": "<p>As Carolyn Snyder writes, 'Paper prototyping is a variation of usability testing where the representative users perform realistic tasks by interacting with a paper version of the interface that is manipulated by a person 'playing computer' who doesn't explain how the interface is intended to work.' In this assignment, your group will conduct heuristic evaluations (HEs) of your paper prototypes and you will individually help out other groups by evaluating theirs. This will complete the prototyping phase of the project, providing you with the feedback you need to begin implementing.</p>",
+			"imageBD": "sprintimage.png",
+			"videoBD": "sprint.mov"
+		},
+		{
+			"id": 5,
+			"BO": "Move Player",
+			"DBO": "Move Left Stick in any direction",
+			"summary": "<p>Review the feedback you got last week from the Heuristic Evaluations of your prototypes. Distill the HE results into a list of concrete changes you want to make to your prototype. Use what worked, and improve what didn't. If you haven't already, make a decision about the prototype you are going with. This could be one of the two you tested or a combination of them. Again, take the time you need. This is what you will be working on for the rest of the course, so make sure you will feel invested in it.</p>",
+			"imageBO": "moveplayerimage.png",
+			"videoBO": "moveplayervideo.mov"
+		},
+		{
+			"id": 6,
+			"BO": "Post Up",
+			"DBO":"Press and hold L2 to post up. Release L2 to leave the post and faceup",
+			"imageBO": "postupimage.png",
+			"videoBO":""
+		},
+		{
+			"id": 7,
+			"BO": "Sprint",
+			"DBO":"Hold RT + move Left Stick in any Direction",
+			"imageBO": "sprintimage.png",
+			"videoBD":"sprint.mov"
+		},
+		{
+			"id": 8,
+			"BO": "Pass",
+			"DBO": "Press X to pass. Use Left Stick to select receiver",
+			"summary": "<p>The goal of this assignment is to launch a user test. To get the kinks out of your application, first test it with a couple of in-person users.</p><p>Any questions about this assignment should be posed to the forums and will be answered promptly by the staff.</p>",
+			"imageBO": "passimage.png",
+			"videoBO": ""
+		},
+		{
+			"id": 9,
+			"BO": "Bounce Pass",
+			"DBO": "Point the left joystick to the player you wish to pass to and quickly tap the circle on the controller",
+			"summary": "<p>What did you find in your study?</p>",
+			"imageBO": "controller.png",
+			"videoBD": "BouncePassVid.mp4"
+		},	
+		{
+			"id": 10,
+			"BO": "Shoot",
+			"DBO": "Move and hold Right Stick then release OR Press and hold Square then release",
+			"summary": "<p>Design for lots of people</p>",
+			"imageBO": "shootimage.png"
+		},		
+		{
+			"id": 11,
+			"AD": "Crowd Dribbler",
+			"DAD": "Point the left joystick to the player you wish to guard",
+			"summary": "<p>Computers everywhere!</p>",
+			"imageAD": "crowdDribbler_controller.png",
+			"imageBD":"CrowdDribbler.mp4"
+		},	
+		{
+			"id": 12,
+			"AD": "Fast Shuffle",
+			"DAD": "Press and hold L2 + R2, move Left Stick in any direction",
+			"summary": "<p>Make design better!</p>",
+			"imageAD": "fastshuffleimage.png"
+		},							
+		{
+			"id": 13,
+			"AD": "Swat Block",
+			"DAD": "Hold R2 and press Triangle or Y",
+			"summary": "<p>Show the world what you've made!</p>",
+			"imageAD": "swatblockimage.png"
+		},
+		{
+			"id": 14,
+			"AD": "Flop",
+			"DAD": "Double Tap Circle",
+			"summary": "<p>Computers everywhere!</p>",
+			"imageAD": "flopimage.png",
+			"imageBD":"Contest.mov"
+		},	
+		{
+			"id": 15,
+			"AO": "Quick Playcall",
+			"DAO": "Press Left on the D-Pad and then choose between two available Dynamic Quick Plays",
+			"summary": "<p>Computers everywhere!</p>",
+			"imageAD": "quickplaycallimage.png",
+			"imageBD":"CrowdDribbler.mp4"
+		},	
+		{
+			"id": 16,
+			"AD": "Positional Playcall",
+			"DAO": "Press L1 then R1, then press the teammate's action button. Follow the on-screen overlay to choose a play from the menu",
+			"summary": "<p>Computers everywhere!</p>",
+			"imageAD": "positionalplaycall.png",
+			"imageBD":"Sprint.mov"
+		},	
+		{
+			"id": 17,
+			"AD": "Basic Pick Control",
+			"DAO": "Press and Hold L1 to have a teammate set a pick",
+			"summary": "<p>Computers everywhere!</p>",
+			"imageAD": "basicpickcontrolimage.png",
+			"imageBD":"BouncePassVid.mp4"
+		},	
+		{
+			"id": 18,
+			"AD": "Icon Pick Control",
+			"DAO": "Press L1 then R1, then press and hold the teammate's action button to have them set the screen",
+			"summary": "<p>Computers everywhere!</p>",
+			"imageAD": "iconpickcontrolimage.png",
+			"imageBD":"CrowdDribbler.mp4"
+		}	
+	]
+}
