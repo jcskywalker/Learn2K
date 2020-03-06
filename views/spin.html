@@ -39,15 +39,15 @@
       
       <div class="row sub-heading mt-2">
           <div class="col-lg-12 text-center">
-              <h1 style="color:honeydew; font-size: 400%"><a href="adv.defence.html"><i="" class="fa fa-arrow-left" style="margin-right: 20px; color:honeydew"></a>Adv.Defense</p>
+              <h1 style="color:honeydew; font-size: 400%"><a href="adv.offence.html"><i="" class="fa fa-arrow-left" style="margin-right: 20px; color:honeydew"></a>Adv. Offense</p>
           </div>
       </div>
-      <h1 style ="text-align: center; color:honeydew;">Crowd Dribbler</h1>
+      <h1 style ="text-align: center; color:honeydew;">Spin</h1>
       <div class="video-section">
           <div class="row mt-3">
               <div class="col-12">
-                    <video class="card"width="150" controls>
-                      <source src="/VideoImage/CrowdDribbler.mp4" type="video/mp4">
+                    <video class="card" width="150" controls>
+                      <source src="/VideoImage/BouncePassVid.mp4" type="video/mp4">
                       Your browser does not support HTML5 video.
                     </video>
               </div>
@@ -56,46 +56,46 @@
       
       <div class="row mt-1">
           <div class="col-12 text-center">
-              <img src="/VideoImage/crowdDribbler_controller.png" class="img-fluid controller-img" alt="Controller">
+              <img src="/VideoImage/quickplaycallimage.png" class="img-fluid controller-img" alt="Controller">
           </div>
       </div>
       
       <div class="row mt-1">
         <div class="col-12">
           <h1 class="text-white">Practise</h1>
-            <p style="color:honeydew; text-align: center;">Press and hold L2 and move Left Stick toward the dribbler.</p>  
+            <p style="color:honeydew">Rotate Right Stick clockwise then quickly release when dribbling with right hand.</p>  
         </div>
       </div>
-      <!--Word Game Start -->
-      <div class="container text-center mt-2">
-       <div class="row">
-         <div class="col-md-6 mx-auto">
-           <p class="lead text-white">Type The Given Word Within
-             <span class="text-success" id="seconds">5</span> Seconds:</p>
-           <h2 class="display-2 mb-5 text-white" id="current-word">bounce</h2>
-           <input type="text" class="form-control form-control-lg" placeholder="Start typing..." id="word-input">
-           <h4 class="mt-3 text-white" id="message"></h4>
-           <div class="row mt-5">
-             <div class="col-md-6">
-               <h3 class="text-white">Time Left:
-                 <span id="time" class="text-white">0</span>
-               </h3>
-             </div>
-             <div class="col-md-6">
-               <h3 class="text-white">Score:
-                 <span id="score" class="text-white">0</span>
-               </h3>
-             </div>
-           </div>
-     
-         </div>
-       </div>
-     </div>
-     <!--Word Game End-->
+<!--Word Game Start -->
+<div class="container text-center mt-2">
+  <div class="row">
+    <div class="col-md-6 mx-auto">
+      <p class="lead text-white">Type The Given Word Within
+        <span class="text-success" id="seconds">5</span> Seconds:</p>
+      <h2 class="display-2 mb-5 text-white" id="current-word">bounce</h2>
+      <input type="text" class="form-control form-control-lg" placeholder="Start typing..." id="word-input">
+      <h4 class="mt-3 text-white" id="message"></h4>
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <h3 class="text-white">Time Left:
+            <span id="time" class="text-white">0</span>
+          </h3>
+        </div>
+        <div class="col-md-6">
+          <h3 class="text-white">Score:
+            <span id="score" class="text-white">0</span>
+          </h3>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--Word Game End-->
       <div class="row mt-1">
         <div class="col-12">
             <div class="completeBtn">
-              <button type="button" style="color:papayawhip" class="btn btn-primary btn-complete" onclick="ChangeToCompleted('CrowdDribbler')">Complete</button>
+              <button type="button" style="color:papayawhip" class="btn btn-primary btn-complete" onclick="ChangeToCompleted('Spin')">Complete</button>
             </div>
         </div>
       </div>
@@ -135,7 +135,7 @@
   <script type="application/javascript">
     window.addEventListener("load", function() {
       words = [
-          "crowd",
+          "spin",
           "river",
           "lucky",
           "statue",
@@ -167,7 +167,7 @@
   <!-- End word game -->
   <script type="application/javascript">
     $(document).ready(function(){
-        LoadCompletedButton("CrowdDribbler");
+        LoadCompletedButton("Spin");
     });
   </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159330971-1"></script>
@@ -184,4 +184,3 @@ ga('create', 'GA_MEASUREMENT_ID', 'auto');
 </body>
 
 </html>
-
