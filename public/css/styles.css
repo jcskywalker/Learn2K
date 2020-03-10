@@ -37,6 +37,12 @@
     border-radius: 10px;
     background: floralwhite;
 }
+.homepagebackground {
+    background: url('smoke.jpg');
+    background-size: cover;
+    width:100%;
+    height: 100%;
+}
 .showcase {
     background: url('NBA 2K12 First Textures Exported.jpg') repeat-x center center fixed;
     height: 100%;
