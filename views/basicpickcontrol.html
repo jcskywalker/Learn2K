@@ -24,6 +24,7 @@
   ga('create', 'UA-159330971-1', 'auto');
   ga('send', 'pageview');
   </script>
+  
 </head>
 
 <body class="showcase">
@@ -38,15 +39,15 @@
       
       <div class="row sub-heading mt-2">
           <div class="col-lg-12 text-center">
-              <h1 style="color:honeydew; font-size: 400%"><a href="adv.offence.html"><i="" class="fa fa-arrow-left" style="margin-right: 20px; color:honeydew"></a>Adv. Offense</p>
+              <h1 style="color:honeydew; font-size: 400%"><a href="adv.offence.html"><i="" class="fa fa-arrow-left" style="margin-right: 20px; color:honeydew"></a>Advanced Offense</p>
           </div>
       </div>
-      <h1 style ="text-align: center; color:honeydew;">Basic Pick Control</h1>
+      <h1 style ="text-align: center; color:honeydew; font-size: 400%;">Basic Pick Control</h1>
       <div class="video-section">
           <div class="row mt-3">
               <div class="col-12">
-                    <video class="card" width="150" controls>
-                      <source src="/VideoImage/BouncePassVid.mp4" type="video/mp4">
+                    <video class="card"width="150" controls>
+                      <source src="/VideoImage/intensedvideo.mov" type="video/mp4">
                       Your browser does not support HTML5 video.
                     </video>
               </div>
@@ -55,45 +56,47 @@
       
       <div class="row mt-1">
           <div class="col-12 text-center">
-              <img src="/VideoImage/basicpickcontrolimage.png" class="img-fluid controller-img" alt="Controller">
+            <h1 class="text-white" style="text-align: center; font-size: 300%;">Prompts for Practice Game</h1>
+              <img src="/VideoImage/pick.png" class="img-fluid controller-img" alt="Controller">
           </div>
       </div>
       
       <div class="row mt-1">
         <div class="col-12">
-            <p style="color:honeydew; text-align: center;">Press and hold L1 to have a teammate set a pick.</p>  
+          
+            <p style="color:honeydew; text-align: center;">To call for a pick, press the 1 Key</p>  
         </div>
       </div>
-      <!--Word Game Start -->
-      <div class="container text-center mt-2">
-       <div class="row">
-         <div class="col-md-6 mx-auto">
-           <p class="lead text-white">Type The Given Word Within
-             <span class="text-success" id="seconds">5</span> Seconds:</p>
-           <h2 class="display-2 mb-5 text-white" id="current-word">bounce</h2>
-           <input type="text" class="form-control form-control-lg" placeholder="Start typing..." id="word-input">
-           <h4 class="mt-3 text-white" id="message"></h4>
-           <div class="row mt-5">
-             <div class="col-md-6">
-               <h3 class="text-white">Time Left:
-                 <span id="time" class="text-white">0</span>
-               </h3>
-             </div>
-             <div class="col-md-6">
-               <h3 class="text-white">Score:
-                 <span id="score" class="text-white">0</span>
-               </h3>
-             </div>
-           </div>
-     
-         </div>
-       </div>
-     </div>
-     <!--Word Game End-->
+<!--Word Game Start -->
+<div class="container text-center mt-2">
+  <div class="row">
+    <div class="col-md-6 mx-auto">
+      <p class="lead text-white">Practice BASIC PICK CONTROL by typing keys within
+        <span class="text-success" id="seconds">5</span> Seconds:</p>
+      <h2 class="display-2 mb-5 text-white" id="current-word">bounce</h2>
+      <input type="text" class="form-control form-control-lg" placeholder="Start typing..." id="word-input">
+      <h4 class="mt-3 text-white" id="message"></h4>
+      <div class="row mt-5">
+        <div class="col-md-6">
+          <h3 class="text-white">Time Left:
+            <span id="time" class="text-white">0</span>
+          </h3>
+        </div>
+        <div class="col-md-6">
+          <h3 class="text-white">Score:
+            <span id="score" class="text-white">0</span>
+          </h3>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--Word Game End-->
       <div class="row mt-1">
         <div class="col-12">
-            <div class="completeBtn">
-              <button type="button" style="color:papayawhip" class="btn btn-primary btn-complete" onclick="ChangeToCompleted('BasicPickControl')">Complete</button>
+            <div class="completeBtn" style="text-align: center;">
+              <button type="button" style=color:papayawhip; class="btn btn-primary btn-complete" onclick="ChangeToCompleted('BasicPickControl')">Complete</button>
             </div>
         </div>
       </div>
@@ -133,31 +136,16 @@
   <script type="application/javascript">
     window.addEventListener("load", function() {
       words = [
-          "pick",
-          "river",
-          "lucky",
-          "statue",
-          "generate",
-          "stubborn",
-          "cocktail",
-          "runaway",
-          "joke",
-          "developer",
-          "establishment",
-          "hero",
-          "javascript",
-          "nutrition",
-          "revolver",
-          "echo",
-          "siblings",
-          "investigate",
-          "horrendous",
-          "symptom",
-          "laughter",
-          "magic",
-          "master",
-          "space",
-          "definition"
+          "wasd1",
+          "dasw1",
+          "wsad1",
+          "wsda1",
+          "asdw1",
+          "swda1",
+          "wwds1",
+          "sadw1",
+          "ssdw1",
+          "aasd1"
         ];
       init();
     });

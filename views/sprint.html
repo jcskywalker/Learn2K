@@ -42,7 +42,7 @@
               <h1 style="color:honeydew; font-size: 400%"><a href="basicdefence.html"><i="" class="fa fa-arrow-left" style="margin-right: 20px; color:honeydew"></a>Basic Defense</p>
           </div>
       </div>
-      <h1 style ="text-align: center; color:honeydew;">Sprint</h1>
+      <h1 style ="text-align: center; color:honeydew; font-size: 400%;">Sprint</h1>
       <div class="video-section">
           <div class="row mt-3">
               <div class="col-12">
@@ -56,21 +56,22 @@
       
       <div class="row mt-1">
           <div class="col-12 text-center">
+            <h1 class="text-white" style="text-align: center; font-size: 300%;">Prompts for Practice Game</h1>
               <img src="/VideoImage/sprintimage.png" class="img-fluid controller-img" alt="Controller">
           </div>
       </div>
       
       <div class="row mt-1">
         <div class="col-12">
-          <h1 class="text-white">Practise</h1>
-            <p style="color:honeydew; text-align: center;">Hold RT + move Left Stick in any direction</p>  
+          
+            <p style="color:honeydew; text-align: center;">Hold the Left Shift Button while using the WASD keys to move the player</p>  
         </div>
       </div>
- <!--Word Game Start -->
- <div class="container text-center mt-2">
+<!--Word Game Start -->
+<div class="container text-center mt-2">
   <div class="row">
     <div class="col-md-6 mx-auto">
-      <p class="lead text-white">Type The Given Word Within
+      <p class="lead text-white">Practice SPRINT by typing keys within
         <span class="text-success" id="seconds">5</span> Seconds:</p>
       <h2 class="display-2 mb-5 text-white" id="current-word">bounce</h2>
       <input type="text" class="form-control form-control-lg" placeholder="Start typing..." id="word-input">
@@ -94,8 +95,8 @@
 <!--Word Game End-->
       <div class="row mt-1">
         <div class="col-12">
-            <div class="completeBtn">
-              <button type="button" style="color:papayawhip" class="btn btn-primary btn-complete" onclick="ChangeToCompleted('Sprint')">Complete</button>
+            <div class="completeBtn" style="text-align: center;">
+              <button type="button" style=color:papayawhip; class="btn btn-primary btn-complete" onclick="ChangeToCompleted('Sprint')">Complete</button>
             </div>
         </div>
       </div>
@@ -135,31 +136,16 @@
   <script type="application/javascript">
     window.addEventListener("load", function() {
       words = [
-          "sprint",
-          "river",
-          "lucky",
-          "statue",
-          "generate",
-          "stubborn",
-          "cocktail",
-          "runaway",
-          "joke",
-          "developer",
-          "establishment",
-          "hero",
-          "javascript",
-          "nutrition",
-          "revolver",
-          "echo",
-          "siblings",
-          "investigate",
-          "horrendous",
-          "symptom",
-          "laughter",
-          "magic",
-          "master",
-          "space",
-          "definition"
+        "WASD",
+        "DASW",
+        "WSAD",
+        "WSDA",
+        "ASDW",
+        "SWDA",
+        "WWDS",
+        "SADW",
+        "SSDW",
+        "AASD"
         ];
       init();
     });
